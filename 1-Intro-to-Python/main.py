@@ -83,3 +83,36 @@ print(is_even(22))  # True
 print(is_even(20))  # True
 print(is_even(33))  # False
 print(is_even(9))  # False
+
+
+#  ############ ############  STRINGS ############ ############ ###########
+
+print("# ############ ############  STRINGS ############ ############ ###########")
+
+
+username = "John"
+adam = "Adam"
+
+
+WELCOME_MSG = "Hello, "
+
+
+def welcome(user: str):
+    print(WELCOME_MSG + user)
+    
+
+welcome(username)
+welcome(adam)
+
+# Escape Characters
+
+q = "What is your name ?"
+
+print(q)
+
+q = 'What\'s your name ?'
+print(q)
+q = "What's your name ?"
+
+
+print(q)
