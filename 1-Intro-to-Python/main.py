@@ -48,7 +48,6 @@ print(10 // 3)  # Floor division
 
 print(10 % 3)  # reminder
 
-
 result = 10 / 3
 to_int = 10 // 3
 
@@ -57,3 +56,30 @@ decimal_place = result - to_int
 print(f"Result: {result}")
 print(f"To int: {to_int}")
 print(f"Decimal Place: {decimal_place}")
+
+duration = 40
+
+months = duration // 30
+
+remaining_days = duration % 30
+
+print(f"All Duration: {duration}")
+print(f"Months: {months}")
+print(f"Days: {remaining_days}")
+
+
+def is_even(number: int):
+    return number % 2 == 0
+
+
+def style_row(row_index: int):
+    if is_even(row_index):
+        print("Apply Black Style")
+    else:
+        print("Apply White Style")
+
+
+print(is_even(22))  # True
+print(is_even(20))  # True
+print(is_even(33))  # False
+print(is_even(9))  # False
