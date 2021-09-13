@@ -189,6 +189,8 @@ print(
 )
 
 # Nested String Interpolation in Python
+# https://blog.teclado.com/python-nested-string-interpolation/
+
 
 number_of_files = 5
 DIGITS = 2
@@ -231,3 +233,8 @@ for file_number in range(1, number_of_files + 1):
 
 # convert colors
 # https://blog.teclado.com/python-formatting-integers-in-different-bases/
+
+
+# all blogs
+
+# https://blog.teclado.com/

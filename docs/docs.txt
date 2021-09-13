@@ -1,0 +1,17 @@
+1- # convert colors
+# https://blog.teclado.com/python-formatting-integers-in-different-bases/
+
+
+2- # all blogs
+
+# https://blog.teclado.com/
+
+
+
+3- # Nested String Interpolation in Python
+# https://blog.teclado.com/python-nested-string-interpolation/
+
+
+
+4- Formatting Numbers for Printing in Python
+https://blog.teclado.com/python-formatting-numbers-for-printing/
