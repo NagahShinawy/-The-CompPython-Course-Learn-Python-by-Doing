@@ -1,1 +1,1 @@
-# -The-CompPython-Course-Learn-Python-by-Doing
+# The-CompPython-Course-Learn-Python-by-Doing
