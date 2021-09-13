@@ -99,7 +99,7 @@ WELCOME_MSG = "Hello, "
 
 def welcome(user: str):
     print(WELCOME_MSG + user)
-    
+
 
 welcome(username)
 welcome(adam)
@@ -110,7 +110,7 @@ q = "What is your name ?"
 
 print(q)
 
-q = 'What\'s your name ?'
+q = "What's your name ?"
 print(q)
 q = "What's your name ?"
 
@@ -149,7 +149,35 @@ print(order)
 order_details = {
     "order_id": order_id,
     "delivery_at": delivery_at,
-    "phone_number": phone
+    "phone_number": phone,
 }
 
 print(order.format(**order_details))
+
+#  ############ ############  floating numbers using f-string ############ ############ ###########
+
+print(
+    "# ############ ############  floating numbers using f-string ############ ############ ###########"
+)
+
+
+# floating numbers using f-string
+# https://blog.teclado.com/python-formatting-numbers-for-printing/
+
+x = 1000000
+
+print(f"{x:,}")  # 1,000,000
+print(f"{x:_}")  # 1_000_000
+
+
+x = 4863.4343091
+
+print(f"{x:,.3f}")  # 4,863.434
+print(f"{x:_.3f}")  # 4_863.434
+
+
+# Percentages
+questions = 30
+correct_answers = 20
+
+print(f"You got {correct_answers / questions :.2%} correct!")
