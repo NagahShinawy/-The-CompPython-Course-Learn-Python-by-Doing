@@ -131,7 +131,7 @@ dob:   {dob}
 
 print(info.format(name=name, age=age, dob=dob))
 
-# using f-string
+# using f-string [ Python String Interpolation]
 
 items = 5
 price = 140
@@ -181,3 +181,50 @@ questions = 30
 correct_answers = 20
 
 print(f"You got {correct_answers / questions :.2%} correct!")
+
+#  ############ ############  # Nested String Interpolation in Python ############ ############ ###########
+
+print(
+    "# ############ ############  # Nested String Interpolation in Python ############ ############ ###########"
+)
+
+# Nested String Interpolation in Python
+
+number_of_files = 5
+DIGITS = 2
+
+
+for counter in range(1, number_of_files + 1):
+    print(f"image{counter:0{DIGITS}}.png")
+
+
+print("#" * 20)
+
+number_of_files = 7
+number_digits = int(input("How many digits are used in the numbering scheme? "))
+
+for file_number in range(1, number_of_files + 1):
+    print(f"image{file_number:0{number_digits}}.png")
+
+
+print("#" * 20)
+
+
+number_of_files = 7
+number_digits = int(input("How many digits are used in the numbering scheme? "))
+
+for file_number in range(1, number_of_files + 1):
+    print("image{:0{}}.png".format(file_number, number_digits))
+
+
+print("#" * 20)
+
+number_of_files = 4
+number_digits = int(input("How many digits are used in the numbering scheme? "))
+
+for file_number in range(1, number_of_files + 1):
+    print(
+        "image{number:0{padding_amount}}.png".format(
+            number=file_number, padding_amount=number_digits
+        )
+    )
