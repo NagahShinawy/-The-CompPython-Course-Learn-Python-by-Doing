@@ -116,3 +116,17 @@ q = "What's your name ?"
 
 
 print(q)
+
+# multiline string
+
+name = "James"
+age = 23
+dob = "1998-09-10"
+
+info = """
+name:  {name}
+age:   {age}
+dob:   {dob}
+"""
+
+print(info.format(name=name, age=age, dob=dob))
