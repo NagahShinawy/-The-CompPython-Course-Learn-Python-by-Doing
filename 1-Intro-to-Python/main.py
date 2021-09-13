@@ -228,3 +228,6 @@ for file_number in range(1, number_of_files + 1):
             number=file_number, padding_amount=number_digits
         )
     )
+
+# convert colors
+# https://blog.teclado.com/python-formatting-integers-in-different-bases/
