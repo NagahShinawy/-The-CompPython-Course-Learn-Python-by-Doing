@@ -130,3 +130,26 @@ dob:   {dob}
 """
 
 print(info.format(name=name, age=age, dob=dob))
+
+# using f-string
+
+items = 5
+price = 140
+
+order = f"You Ordered {items} items with price {price}$"
+
+print(order)
+order_id = "nas543534535"
+phone = "+201270000000"
+delivery_at = "2022-03-12"
+order = f"Your Order with Id '{order_id}' has been shipped by '{delivery_at}'. we are contacting you at phone number '{phone}'"
+
+print(order)
+
+order_details = {
+    "order_id": order_id,
+    "delivery_at": delivery_at,
+    "phone_number": phone
+}
+
+print(order.format(**order_details))
