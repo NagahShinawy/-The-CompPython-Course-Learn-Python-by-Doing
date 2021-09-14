@@ -255,3 +255,9 @@ print(f"Welcome {name}")
 age = int(input("Your age: "))
 
 print(f"Your age is {age * 12} months")
+
+
+info = "{0} is {1} years old, {0} is developer"
+name = "John"
+age = 23
+print(info.format(name, age))
