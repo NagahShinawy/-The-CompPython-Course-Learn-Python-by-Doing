@@ -203,7 +203,8 @@ for counter in range(1, number_of_files + 1):
 print("#" * 20)
 
 number_of_files = 7
-number_digits = int(input("How many digits are used in the numbering scheme? "))
+# number_digits = int(input("How many digits are used in the numbering scheme? "))
+number_digits = 2
 
 for file_number in range(1, number_of_files + 1):
     print(f"image{file_number:0{number_digits}}.png")
@@ -213,7 +214,9 @@ print("#" * 20)
 
 
 number_of_files = 7
-number_digits = int(input("How many digits are used in the numbering scheme? "))
+# number_digits = int(input("How many digits are used in the numbering scheme? "))
+number_digits = 2
+
 
 for file_number in range(1, number_of_files + 1):
     print("image{:0{}}.png".format(file_number, number_digits))
@@ -222,7 +225,9 @@ for file_number in range(1, number_of_files + 1):
 print("#" * 20)
 
 number_of_files = 4
-number_digits = int(input("How many digits are used in the numbering scheme? "))
+# number_digits = int(input("How many digits are used in the numbering scheme? "))
+number_digits = 2
+
 
 for file_number in range(1, number_of_files + 1):
     print(
@@ -238,3 +243,15 @@ for file_number in range(1, number_of_files + 1):
 # all blogs
 
 # https://blog.teclado.com/
+
+
+#  ############ ############  # Inputs ############ ############ ###########
+
+print("# ############ ############  # Inputs ############ ############ ###########")
+name = input("Your Name: ")
+
+print(f"Welcome {name}")
+
+age = int(input("Your age: "))
+
+print(f"Your age is {age * 12} months")
