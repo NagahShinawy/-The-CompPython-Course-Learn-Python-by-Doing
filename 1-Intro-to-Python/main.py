@@ -259,5 +259,25 @@ print(f"Your age is {age * 12} months")
 
 info = "{0} is {1} years old, {0} is developer"
 name = "John"
-age = 23
+age = 10
 print(info.format(name, age))
+
+#  ############ ############  # bool ############ ############ ###########
+
+print("# ############ ############  # bool ############ ############ ###########")
+
+UNDERAGE = 18
+
+is_adult = age >= 18
+
+
+print(f"Age {age} adult is {is_adult}")
+
+sys_number = 80
+
+user_number = int(input("Your Number: "))
+
+if user_number == sys_number:
+    print("Match")
+else:
+    print("Not Match")
