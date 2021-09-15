@@ -84,15 +84,12 @@ print(is_even(20))  # True
 print(is_even(33))  # False
 print(is_even(9))  # False
 
-
 #  ############ ############  STRINGS ############ ############ ###########
 
 print("# ############ ############  STRINGS ############ ############ ###########")
 
-
 username = "John"
 adam = "Adam"
-
 
 WELCOME_MSG = "Hello, "
 
@@ -113,7 +110,6 @@ print(q)
 q = "What's your name ?"
 print(q)
 q = "What's your name ?"
-
 
 print(q)
 
@@ -160,7 +156,6 @@ print(
     "# ############ ############  floating numbers using f-string ############ ############ ###########"
 )
 
-
 # floating numbers using f-string
 # https://blog.teclado.com/python-formatting-numbers-for-printing/
 
@@ -169,12 +164,10 @@ x = 1000000
 print(f"{x:,}")  # 1,000,000
 print(f"{x:_}")  # 1_000_000
 
-
 x = 4863.4343091
 
 print(f"{x:,.3f}")  # 4,863.434
 print(f"{x:_.3f}")  # 4_863.434
-
 
 # Percentages
 questions = 30
@@ -195,10 +188,8 @@ print(
 number_of_files = 5
 DIGITS = 2
 
-
 for counter in range(1, number_of_files + 1):
     print(f"image{counter:0{DIGITS}}.png")
-
 
 print("#" * 20)
 
@@ -209,25 +200,20 @@ number_digits = 2
 for file_number in range(1, number_of_files + 1):
     print(f"image{file_number:0{number_digits}}.png")
 
-
 print("#" * 20)
-
 
 number_of_files = 7
 # number_digits = int(input("How many digits are used in the numbering scheme? "))
 number_digits = 2
 
-
 for file_number in range(1, number_of_files + 1):
     print("image{:0{}}.png".format(file_number, number_digits))
-
 
 print("#" * 20)
 
 number_of_files = 4
 # number_digits = int(input("How many digits are used in the numbering scheme? "))
 number_digits = 2
-
 
 for file_number in range(1, number_of_files + 1):
     print(
@@ -256,7 +242,6 @@ age = int(input("Your age: "))
 
 print(f"Your age is {age * 12} months")
 
-
 info = "{0} is {1} years old, {0} is developer"
 name = "John"
 age = 10
@@ -270,7 +255,6 @@ UNDERAGE = 18
 
 is_adult = age >= 18
 
-
 print(f"Age {age} adult is {is_adult}")
 
 sys_number = 80
@@ -282,7 +266,6 @@ if user_number == sys_number:
 else:
     print("Not Match")
 
-
 # https://www.teclado.com/30-days-of-python/python-30-day-5-conditionals-booleans
 
 
@@ -290,12 +273,10 @@ else:
 
 print("# ############ ############  # id ############ ############ ###########")
 
-
 print(id(True))
 
 is_active = True
 is_admin = True
-
 
 print("is_active id", id(is_active))
 print("is_admin id", id(is_admin))
@@ -303,10 +284,36 @@ print("is_admin id", id(is_admin))
 names = ["John", "James", "Loen"]
 users = ["John", "James", "Loen"]
 
-
 print(names == users)  # check the values  ==> True
 print(names == users)  # check the actual lists itself with ids  ===> False
 
 # container names has the same values of container user ====> True
 # but container names not the container user , they have different memory location ====> False
+
+
+#  ############ ############  # and vs or ########### ############ ###########
+
+print("# ############ ############  # and vs or ############ ############ ###########")
+age = 65
+is_valid_age = age >= 0 and age <= 40  # not pythonic
+
+print(is_valid_age)
+
+is_valid_age = 0 <= age <= 40  # pythonic
+
+
+print(is_valid_age)
+
+ADULT_WORKING_AGE = 18
+
+RETIREMENT_AGE = 65
+working_age_range = range(ADULT_WORKING_AGE, RETIREMENT_AGE + 1)
+
+print(age in working_age_range)
+
+if age not in working_age_range:
+    print("Not Working")
+
+else:
+    print("Working")
 
