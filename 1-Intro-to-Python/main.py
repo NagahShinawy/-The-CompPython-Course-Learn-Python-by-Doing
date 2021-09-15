@@ -281,3 +281,32 @@ if user_number == sys_number:
     print("Match")
 else:
     print("Not Match")
+
+
+# https://www.teclado.com/30-days-of-python/python-30-day-5-conditionals-booleans
+
+
+#  ############ ############  # id ########### ############ ###########
+
+print("# ############ ############  # id ############ ############ ###########")
+
+
+print(id(True))
+
+is_active = True
+is_admin = True
+
+
+print("is_active id", id(is_active))
+print("is_admin id", id(is_admin))
+
+names = ["John", "James", "Loen"]
+users = ["John", "James", "Loen"]
+
+
+print(names == users)  # check the values  ==> True
+print(names == users)  # check the actual lists itself with ids  ===> False
+
+# container names has the same values of container user ====> True
+# but container names not the container user , they have different memory location ====> False
+
