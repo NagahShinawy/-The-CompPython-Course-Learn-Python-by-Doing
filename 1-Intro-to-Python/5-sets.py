@@ -39,9 +39,7 @@ unique_salaries.remove(3000)
 
 print(unique_salaries)
 
-
 print(unique_salaries)
-
 
 # update
 unique_salaries.update([3000, 5000, 5000])
@@ -55,3 +53,10 @@ for _ in range(1000000):
     pass
     # assert x == random_salary, f"{random_salary}"
 print(random_salary)
+
+# remove intersections
+
+bundle_1 = {"John", "James", "Loen"}
+bundle_2 = {"Smith", "Loen", "Adam"}
+
+print(bundle_1.symmetric_difference(bundle_2))
