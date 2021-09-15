@@ -1,4 +1,6 @@
 # https://www.teclado.com/30-days-of-python/python-30-day-11-sets
+# https://blog.teclado.com/python-symmetric-difference/
+# https://blog.teclado.com/python-set-operators/
 
 grades = [45, 23, 45, 90, 100, 50, 40, 90]
 
