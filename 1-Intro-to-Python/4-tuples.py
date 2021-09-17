@@ -43,7 +43,7 @@ credentials = "test"
 
 print(credentials, type(credentials))  # test TYPE ==>  str
 
-credentials = "test",
+credentials = ("test",)
 print(credentials, type(credentials))  # test TYPE ==>  tuple
 
 
@@ -53,8 +53,8 @@ print(credentials, type(credentials))  # test TYPE ==>  tuple
 
 # credentials += "pass@123"  # TypeError: can only concatenate tuple (not "str") to tuple
 
-credentials = credentials + ("password", )
+credentials = credentials + ("password",)
 
 print(credentials)
 
-credentials += "admin",
+credentials += ("admin",)

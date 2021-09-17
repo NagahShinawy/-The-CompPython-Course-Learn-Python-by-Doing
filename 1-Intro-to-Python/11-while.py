@@ -14,4 +14,3 @@ while username.lower() not in users:
     username = input("Invalid username, Try Again: ")
 
 print("Success!")
-
