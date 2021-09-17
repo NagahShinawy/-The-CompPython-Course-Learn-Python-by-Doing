@@ -2,6 +2,8 @@
 
 # https://blog.teclado.com/python-slices-part-2/
 
+# https://blog.teclado.com/python-quick-sequence-reversal/
+
 colors = ["white", "black", "red", "green", "blue", "yellow", "gray"]
 
 print(len(colors))
