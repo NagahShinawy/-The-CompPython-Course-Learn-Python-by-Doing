@@ -1,6 +1,5 @@
 recipients = ["john@test.com", "james@test.com", "adam@test.com", "loen@test.com"]
 
-
 print(recipients)
 
 expected = "john@test.com;james@test.com;adam@test.com;loen@test.com"
@@ -29,3 +28,11 @@ actual = "I Love langs " + joining_lags + " and " + last_lang
 print(expected)
 print(actual)
 print(expected == actual)
+
+# split
+
+domain = "www.test.com/images/dogs/germanshepherd.png"
+
+img_name = domain.split("/")[-1]
+
+print(img_name)
