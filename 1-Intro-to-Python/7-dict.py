@@ -1,3 +1,8 @@
+# https://blog.teclado.com/python-updating-dictionaries/
+
+# https://www.teclado.com/30-days-of-python/python-30-day-10-dictionaries
+
+
 from pprint import pprint
 
 
