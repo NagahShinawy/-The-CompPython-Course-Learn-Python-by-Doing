@@ -1,3 +1,8 @@
+# split join slicing
+
+
+# https://www.teclado.com/30-days-of-python/python-30-day-7-split-join
+
 recipients = ["john@test.com", "james@test.com", "adam@test.com", "loen@test.com"]
 
 print(recipients)
