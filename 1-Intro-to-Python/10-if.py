@@ -1,5 +1,8 @@
 # https://blog.teclado.com/python-pythons-ternary-operator/
 
+# https://www.teclado.com/30-days-of-python/python-30-day-5-conditionals-booleans
+
+
 username = input("Enter username: ")
 users = ["James", "Loen", "Adam", "John", "Smith"]
 
