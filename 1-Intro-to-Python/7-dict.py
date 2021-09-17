@@ -101,3 +101,35 @@ medical_profile = {"blood_type": "A+", "diseases": "cancer"}
 profile = vital_signs | medical_profile
 
 print(profile)
+
+
+print("#" * 100)
+# ####### ####### ####### ####### ####### ####### ####### ####### ####### ######
+
+for key in profile:
+    print(key)
+
+print("#" * 100)
+for key in profile.keys():
+    print(key)
+
+print("#" * 100)
+for value in profile.values():
+    print(value)
+
+
+print("#" * 100)
+
+for key, value in profile.items():
+    print(f"{key} ====> {value}")
+
+locations = [
+    {"lang": 43423, "lat": 6564},
+    {"lang": 6666, "lat": 7777},
+    {"lang": 1111, "lat": 2222},
+]
+
+
+for location in locations:
+    for lang, lat in location.items():
+        print(f"Lang: {lang}, Lat: {lat}")
