@@ -20,3 +20,7 @@ booking_history = [
 print("From\tTo")
 for booking in booking_history:
     print(f"{booking['from']}\t{booking['to']}")
+
+
+for i in range(10, 0, -1):
+    print(i)
