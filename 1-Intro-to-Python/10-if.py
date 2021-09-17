@@ -1,3 +1,5 @@
+# https://blog.teclado.com/python-pythons-ternary-operator/
+
 username = input("Enter username: ")
 users = ["James", "Loen", "Adam", "John", "Smith"]
 
@@ -52,3 +54,10 @@ if username in users:
 
 else:
     print(f"Username {username} Not Found")
+
+
+is_smoke = True
+
+status = "Smoking" if is_smoke else "No Smoking"
+
+print(status)
