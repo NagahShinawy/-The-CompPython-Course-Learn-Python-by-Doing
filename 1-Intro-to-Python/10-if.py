@@ -1,4 +1,6 @@
 username = input("Enter username: ")
+users = ["James", "Loen", "Adam", "John", "Smith"]
+
 
 ADMIN = "Admin"
 
@@ -41,5 +43,12 @@ else:
     print(SpeedStatus.UNKNOWN)
 
 
+if username:
+    print(f"Your Username is {username}")
 
 
+if username in users:
+    print(f"Your Username Is Found {username}")
+
+else:
+    print(f"Username {username} Not Found")
