@@ -1,3 +1,5 @@
+# https://www.teclado.com/30-days-of-python/python-30-day-9-enumerate-zip
+
 from collections import namedtuple
 
 Movie = namedtuple("Movie", ["title", "director", "published"])
@@ -22,3 +24,9 @@ print("#" * 100)
 for movie in movies:
     movie_obj = Movie(*movie)
     print(f"{movie_obj.title}({movie_obj.published})")
+
+
+print("#" * 100)
+for counter, movie in enumerate(movies, start=1):
+    movie_obj = Movie(*movie)
+    print(f"{counter}-{movie_obj.title}({movie_obj.published})")
