@@ -1,3 +1,5 @@
+# https://blog.teclado.com/python-enumerate/
+
 names = ["loen", "daniel", "stephen", "james", "john", "adam"]
 
 names = list(
