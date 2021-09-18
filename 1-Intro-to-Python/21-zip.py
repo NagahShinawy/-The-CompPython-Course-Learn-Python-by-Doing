@@ -1,3 +1,5 @@
+# https://blog.teclado.com/python-zip/
+
 from itertools import zip_longest
 
 
