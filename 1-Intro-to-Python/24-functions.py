@@ -40,6 +40,12 @@ def main():
     print(locals())
 
 
+def greet(name):
+    greeting = f"Hello, {name}!"
+    print(greeting)
+
+
 if __name__ == "__main__":
     main()
+    print(f"The value of greet('Phil') is {greet('Phil')}.")
     # print(locals())
