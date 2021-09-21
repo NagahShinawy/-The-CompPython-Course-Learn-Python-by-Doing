@@ -2,9 +2,9 @@ from collections import namedtuple
 from prettytable import PrettyTable
 
 MENU_PROMPT = r"""
-    Enter 'a' to add a movie,
-    's\l' to show\list your movies,
-    'f' to find a movie by title, or 'q' to quit: 
+Enter 'a' to add a movie,
+'s\l' to show\list your movies,
+'f' to find a movie by title, or 'q' to quit: 
 """
 
 movies = []
