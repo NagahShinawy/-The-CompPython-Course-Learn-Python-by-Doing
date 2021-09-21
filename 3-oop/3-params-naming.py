@@ -1,6 +1,4 @@
-
 class Director:
-
     def __init__(self, name, dob):
         self.name = name
         self.dob = dob
@@ -10,7 +8,6 @@ class Director:
 
 
 class Movie:
-
     def __init__(self, title: str, director: Director, year: int):
         self.title = title
         self.director = director
@@ -25,6 +22,5 @@ def main():
     loen_the_pro = Movie("Loen The Pro", john, 1994)
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

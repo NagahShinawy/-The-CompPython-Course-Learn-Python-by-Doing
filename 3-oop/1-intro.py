@@ -53,7 +53,9 @@ class Student:
     def show_all(cls):
         students = PrettyTable()
         students.field_names = cls.STUDENT_FIELDS
-        students.add_rows(([student.name, student.email, student.score] for student in cls.__students))
+        students.add_rows(
+            ([student.name, student.email, student.score] for student in cls.__students)
+        )
         return students
 
     def add_subject(self, title, degree):
