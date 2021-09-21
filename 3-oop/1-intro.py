@@ -27,7 +27,7 @@ class Student:
         self.subjects = []
 
     @property
-    def grades_avrg(self):
+    def average(self):
         return sum(self.grades) / len(self.grades)
 
     @property
