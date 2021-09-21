@@ -23,7 +23,7 @@ class WorkingStudent(Student):
         super().__init__(name, school)
         self.salary = salary
 
-    @property
+    @property  # we are using @property because we are not perform actions, we just calc a value
     def weekly_salary(self):
         return f"{self.salary * self.WEEKLY_WORKING_HOURS}{self.DOLLAR}"
 
