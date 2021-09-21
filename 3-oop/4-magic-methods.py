@@ -1,3 +1,7 @@
+# https://blog.teclado.com/creating-a-new-sequence-type-in-python-part-3/
+# https://blog.teclado.com/creating-a-new-sequence-type-in-python-part-1/
+# https://blog.teclado.com/creating-a-new-sequence-type-in-python-part-2/
+
 movies = ["Matrix", "Loen", "Trueman show", "inception"]
 
 print(movies.__class__)  # <class 'list'>
