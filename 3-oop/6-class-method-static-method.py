@@ -7,6 +7,7 @@ class ClassMixin:
     @staticmethod
     def pwd():
         # it is method belong to class but not depends on self[instance attrs] either cls [class attrs]
+        # it is related somehow to the class
         return __file__
 
 
