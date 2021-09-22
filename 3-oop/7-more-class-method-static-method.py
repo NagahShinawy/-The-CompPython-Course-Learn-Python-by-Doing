@@ -5,6 +5,7 @@ class WorkingHours:
 
     @classmethod
     def calc_salary(cls, hour_rate):
+        # class of the obj will passed as first argument 'cls'
         return f"{hour_rate * cls.WEEKLY_HOURS} {cls.CURRENCY}"
 
     @property

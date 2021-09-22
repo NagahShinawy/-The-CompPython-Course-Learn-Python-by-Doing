@@ -22,5 +22,9 @@ class Article(ClassMixin):
 
 django = Article("ORM in Django", "John")
 
-print(django.cls())
-print(django.pwd())
+print(django.cls())  # calling classmethod with obj
+print(Article.cls())  # calling classmethod with class
+
+print("#" * 50)
+print(django.pwd())  # calling staticmethod with obj
+print(Article.pwd())  # calling staticmethod with class
