@@ -1,3 +1,6 @@
+# https://www.teclado.com/30-days-of-python/python-30-day-24-exceptions-advanced
+
+
 def to_int(value):
 
     try:
