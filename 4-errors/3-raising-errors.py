@@ -8,13 +8,13 @@ class BaseError(Exception):
         raise cls(cls.text.format(*args))
 
 
-class CarAlreadyExist(BaseError):
+class CarAlreadyExistError(BaseError):
     text = "Car <{}>  already exist"
     description = None
     code = None
 
 
-class NotCarObj(BaseError):
+class NotCarObjError(BaseError):
     text = "Value of <{}> is not <{}> obj. it is <{}>."
     description = None
     code = None
@@ -38,10 +38,10 @@ class Garage:
 
     def add_car(self, car):
         if car in self.cars:
-            error = CarAlreadyExist()
+            error = CarAlreadyExistError()
             error.raise_error(car)
         if not isinstance(car, Car):
-            error = NotCarObj()
+            error = NotCarObjError()
             error.raise_error(car, Car.__name__, car.__class__.__name__)
         self.cars.append(car)
 
@@ -53,8 +53,12 @@ if __name__ == "__main__":
     garage = Garage()
     bwm = Car("BMW", "120K")
     nissan = Car("Nissan", "100K")
+    ford = Car("Ford", "130K")
     garage.add_car(bwm)
     garage.add_car(nissan)
+    garage.add_car(ford)
     # garage.add_car(nissan)  # __main__.CarAlreadyExist: Car <Car(Nissan, 100K)>  already exist
     # garage.remove_car(nissan)  # NotImplementedError: Can not remove cars!. Not implemented Yet
     # garage.add_car("kia")  # __main__.NotCarObj: Value of <kia> is not <Car> obj. it is <str>
+    
+    print(len(garage))
