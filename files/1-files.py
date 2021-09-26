@@ -1,4 +1,7 @@
-file = open("data.txt", "r+")   # open file in read write mode
+# https://www.teclado.com/30-days-of-python/python-30-day-14-files
+
+
+file = open("data.txt", "r+")  # open file in read write mode
 names = file.read()
 
 print(names)
@@ -22,4 +25,3 @@ name = input("Please Type Name : ")
 file.write(f"{name}\n")
 
 file.close()
-
