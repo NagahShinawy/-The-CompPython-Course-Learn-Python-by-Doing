@@ -3,7 +3,6 @@
 
 from prettytable import PrettyTable
 
-
 STD_COLS = ["Name", "Email", "Age"]
 std_table = PrettyTable()
 std_table.field_names = STD_COLS
@@ -15,7 +14,6 @@ std_table.add_rows(students)
 
 print(std_table)
 
-
 # using unpacking
 print("#" * 100)
 
@@ -23,7 +21,6 @@ for student in students:
     name, email, age = student
     print(*student)
     print(name, email, age)
-
 
 sample_csv_value = ",".join(["Adam", "adam@test.com", 23])
 

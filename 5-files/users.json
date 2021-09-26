@@ -1,0 +1,22 @@
+[
+  {
+    "username": "jose",
+    "email": "jose@test.com",
+    "dob": "2000-01-01"
+  },
+  {
+    "username": "david",
+    "email": "dadiv@test.com",
+    "dob": "1999-01-01"
+  },
+  {
+    "username": "loen",
+    "email": "loen@test.com",
+    "dob": "1998-01-01"
+  },
+  {
+    "username": "adam",
+    "email": "adam@test.com",
+    "dob": "2001-01-01"
+  }
+]

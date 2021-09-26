@@ -5,7 +5,6 @@ print(friends)
 with open("people.txt", "r") as f:
     people = {person.lower().strip() for person in f.readlines()}
 
-
 print(people)
 
 nearby = friends.intersection(people)
