@@ -120,7 +120,7 @@ if other:
 
 print("#" * 100)
 
-movies = ['Loen The Prof', 'Inception', 'Mask']
+movies = ["Loen The Prof", "Inception", "Mask"]
 years = [1994, 2010, 199]
 
 movie_by_year = zip(movies, years)

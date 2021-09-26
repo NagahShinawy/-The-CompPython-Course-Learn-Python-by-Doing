@@ -1,4 +1,3 @@
-
 numbers = [7, 6, 3, 12, 80, 30, 24, 20, 11, 12, 15]
 evens = [num for num in numbers if num % 2 == 0]
 
@@ -25,4 +24,3 @@ print(short_names)
 names = ["Matthew", "John", "Helen", "Stephen", "Alexandra", "Rolf"]
 short_final_n = [name for name in names if len(name) < 6 if name[-1] == "n"]
 print(short_final_n)
-

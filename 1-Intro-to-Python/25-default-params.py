@@ -7,4 +7,3 @@ choose_theme("White")
 choose_theme("red")
 
 print(1, 2, 3, 4, sep="-")
-

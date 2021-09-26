@@ -36,9 +36,7 @@ print(item_price)
 print("#" * 100)
 
 zipped = [("John", 26), ("Anne", 31), ("Peter", 29)]
-names, age = zip(
-   *zipped
-)  # converted to [('John', 'Anne', 'Peter'),  (26, 31, 29)]
+names, age = zip(*zipped)  # converted to [('John', 'Anne', 'Peter'),  (26, 31, 29)]
 
 for name in names:
     print(name)

@@ -50,7 +50,7 @@ for student in stds:
 
 options = {
     "a": lambda items: sum(items) / len(items),
-    "t":  sum,
+    "t": sum,
     "o": max,
 }
 
