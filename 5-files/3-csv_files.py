@@ -1,3 +1,6 @@
+# https://www.youtube.com/watch?v=W7QByFjVom8
+
+
 from prettytable import PrettyTable
 
 
@@ -20,3 +23,8 @@ for student in students:
     name, email, age = student
     print(*student)
     print(name, email, age)
+
+
+sample_csv_value = ",".join(["Adam", "adam@test.com", 23])
+
+print(sample_csv_value)
