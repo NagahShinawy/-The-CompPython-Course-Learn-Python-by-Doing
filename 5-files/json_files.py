@@ -44,3 +44,6 @@ to_json = json.loads(apps)  # from to str list [like json obj]
 print(to_json)
 
 print(type(to_json))  # <class 'list'>
+
+print(to_json[0])
+print(to_json[-1])
