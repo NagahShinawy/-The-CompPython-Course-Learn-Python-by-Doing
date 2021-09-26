@@ -15,9 +15,11 @@ print(nearby)
 if nearby:
     nearby = [name.title() for name in nearby]
     print(f"Your Near By Friends are:", ",".join(nearby))
-    with open("nearby_friends.txt", "w") as f:
-        for name in nearby:
-            f.write(name + "\n")
+    is_export = input("Enter Y for export to txt: ")
+    if is_export.lower() == "y":
+        with open("nearby_friends.txt", "w") as f:
+            for name in nearby:
+                f.write(name + "\n")
 
 else:
     print("Your are Lonely")
